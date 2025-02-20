@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Developer Section</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+        a:hover {
+            color: #eaf6f6;
+        }
+
+        .hero-section {
+            background: url(images/backgroundimage.jpg);
+            padding: 80px 0;
+            min-height: 60vh;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 10px solid #2c5b63;
+        }
+
+        .h3Color {
+            color: #11999e;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .btn-custom {
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .skills {
+            padding-top: 20px;
+        }
+
+        .bottom-container {
+            background-color: #66bfbf;
+            padding: 50px 0 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        a {
+            color: #11999e;
+            font-family: "Montserrat", sans-serif;
+            margin: 10px 20px;
+            text-decoration: none;
+        }
+
+        .copyright {
+            color: #eaf6f6;
+            font-size: 0.75rem;
+            padding: 20px 0;
+        }
+
+        .btn {
+            background: #11cdd4;
+            /* background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e); */
+            -webkit-border-radius: 8;
+            -moz-border-radius: 8;
+            border-radius: 8px;
+            font-family: "Montserrat", sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: 0.2fr 1fr;
+            grid-template-rows: repeat(1, 1fr);
+            width: 50%;
+            margin: 20px auto 0 auto;
+            text-align: left;
+            gap: 20px;
+            /* row-gap: 10px; */
+        }
+
+        .contact-me {
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .profile-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .btn-group {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-md-6 content">
+                    <h2 class="fw-bold">
+                        Hey! I am <br />
+                        <span class="text-primary">Web Developer</span>
+                    </h2>
+                    <p>
+                        I am a Full-Stack Web Developer with extensive experience of over
+                        4 years. My expertise is in creating & designing websites, Mobile
+                        Apps, and Desktop Applications.
+                    </p>
+                    <div class="d-flex btn-group">
+                        <button class="btn btn-primary btn-custom me-2" style="border-radius: 60px">
+                            LEARN MORE
+                        </button>
+                        <button class="btn btn-dark btn-custom" style="border-radius: 60px">
+                            HIRE ME
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-md-6 text-center" style="padding-top: 20px">
+                    <img src="images/profile.jpg" alt="Web Developer" class="profile-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2 class="fw-bold" style="padding-left: 120px">My Skills</h2>
+        <div class="parent">
+            <div class="typing">
+                <img src="./images/htmlcss.jpg" alt="typing cat" style="height: 20vh; width: 20vh" />
+            </div>
+
+            <div class="coding">
+                <h3 class="h3Color">Html & Css</h3>
+                <p>
+                    HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the foundational technologies
+                    for creating web pages. HTML provides the structure, while CSS defines the style and layout. HTML is
+                    used along with CSS and Javascript to design web pages
+                </p>
+            </div>
+            <div class="Test">
+                <img src="./images/flutter.png" alt="typing cat" style="height: 20vh; width: 20vh" />
+            </div>
+
+            <div class="coding1">
+                <h3 class="h3Color">Flutter</h3>
+                <p>Flutter is an open-source framework that lets developers create apps for multiple platforms using a
+                    single codebase. It's based on the Dart programming language. For engineering managers and
+                    businesses, Flutter allows the unification of app developers into a single mobile, web, and desktop
+                    app team, building branded apps for multiple platforms out of a single codebase. Flutter speeds
+                    feature development and synchronizes release schedules across the entire customer base.
+                </p>
+            </div>
+            <div class="Test">
+                <img src="./images/reactnative.png" alt="typing cat" style="height: 20vh; width: 20vh" />
+            </div>
+
+            <div class="coding1">
+                <h3 class="h3Color">React Native</h3>
+                <p>React Native is an open-source framework developed by Meta for building native mobile applications
+                    using JavaScript and React. It enables developers to write code once and deploy it on both iOS and
+                    Android platforms, reducing development time and resources. React Native applications are written
+                    using a combination of JavaScript and XML-markup, known as JSX, and are rendered using native
+                    platform APIs, resulting in a native look and feel. It offers a rich set of pre-built components and
+                    allows integration with native code for platform-specific functionalities.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <hr />
+    <div class="contact-me">
+        <h2 class="h3Color">Get In Touch</h2>
+        <h3>If you love hot wings as much as I do.</h3>
+        <p class="contact-message">
+            Love hot wings as much as I do? Let's talk about how awesome they are!
+            We can code while we eat hot wings!
+        </p>
+        <a class="btn" href="mailto:daminidorlikar.com">CONTACT ME</a>
+    </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/damini-dorlikar-6553ab20b/">LinkedIn</a>
+        <a class="footer-link" href="">Twitter</a>
+        <a class="footer-link" href="">Website</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
